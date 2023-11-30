@@ -26,6 +26,11 @@ document.getElementById('capitalize').addEventListener('click', function(){
     document.getElementById('text-area').style.textTransform = 'capitalize';
 });
 
+document.getElementById('fs').addEventListener('input', function(event){
+    const fontValue = event.target.value
+    document.getElementById('text-area').style.fontSize = `${fontValue}px`
+})
+
 
 document.getElementById('clear').addEventListener('click', function(){
     document.getElementById('text-area').style.fontWeight = 'normal';
@@ -33,4 +38,5 @@ document.getElementById('clear').addEventListener('click', function(){
     document.getElementById('text-area').style.textDecoration = 'none';
     document.getElementById('text-area').style.textAlign = 'left';
     document.getElementById('text-area').style.textTransform = 'lowercase';
+    document.getElementById('text-area').style.fontSize = '18px';
 })
